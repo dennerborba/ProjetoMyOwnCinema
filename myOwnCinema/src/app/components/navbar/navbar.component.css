@@ -1,0 +1,42 @@
+* {
+    font-family: var(--main-font);
+}
+
+nav {
+    background-color: transparent;
+    color: #d4d2cd;
+    padding: 1.5em;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu input {
+    border: none;
+    padding: 1.4em;
+    width: 32em;
+    border-radius: 18px;
+    background-color: #0a0824;
+    color: #d4d2cd;
+    font-weight: 600;
+}
+
+.search {
+    position: relative;
+}
+
+.search i {
+    position: absolute; 
+    top: 50%;
+    right: 10px; 
+    transform: translateY(-50%); 
+    color: #d4d2cd;
+}
+
+.user i {
+    font-size: 1.8em;
+}
