@@ -1,5 +1,17 @@
 <section class="container">
-    <div class="container__header">
+    <div class="container__body">
+        <div class="container__header">
+            <h1>{{title}}</h1>
+        </div>
         
+        <div class="container__content" #scrollContainer (mouseenter)="toggleArrows(true)" (mouseleave)="toggleArrows(false)">
+            <div class="arrow left-arrow" (click)="scrollLeft()" *ngIf="showLeftArrow">&#10094;</div>
+            <div class="arrow right-arrow" (click)="scrollRight()" *ngIf="showLeftArrow">&#10095;</div>
+            @for (movie of movies; track $index) {
+            <app-movies-card [movie_name]="movie.name" [movie_length]="movie.length" [movie_summary]="movie.summary"
+                [imageURL]="movie.image">
+            </app-movies-card>
+            }
+        </div>
     </div>
 </section>

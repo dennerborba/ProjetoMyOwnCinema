@@ -8,6 +8,10 @@ nav {
     padding: 1.5em;
 }
 
+span img {
+    width: 200px;
+}
+
 .menu {
     width: 100%;
     display: flex;

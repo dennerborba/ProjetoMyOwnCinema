@@ -1,1 +1,9 @@
-<p>movies-card works!</p>
+<div class="movie-card">
+    <div class="movie-card_image">
+        <span><img [src]="this.imageURL" [alt]="this.movie_name"></span>
+    </div>
+    <div class="movie-card_name">
+        <h2>{{this.movie_name}}</h2>
+    </div>
+    <ng-content></ng-content>
+</div>

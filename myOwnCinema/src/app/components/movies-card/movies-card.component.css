@@ -1,0 +1,23 @@
+* {
+    font-family: var(--main-font);
+}
+
+.movie-card {
+    width: 18em;
+    height: 27em;
+    display: flex;
+    flex-direction: column;
+    padding: 1.2em;
+    align-items: center;
+}
+
+.movie-card_name {
+    margin-top: 0.2em;
+    text-align: center;
+}
+
+.movie-card_image img {
+    width: 17em;
+    height: 26em;
+    border-radius: 12px;
+}
